@@ -9,6 +9,4 @@ pod 'RealmSwift'
 
 pod 'Eureka', '~> 1.2'
 
-pod 'ReactiveCocoa', '~> 4.0.4-alpha-1'
-
 pod 'ImageSlideshow/AFURL'
