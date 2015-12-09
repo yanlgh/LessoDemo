@@ -90,7 +90,7 @@
                         <outlet property="loginContentView" destination="Gev-er-NQL" id="cei-BN-XJ8"/>
                         <outlet property="txtUname" destination="eG9-r9-RZq" id="3C2-Gq-Jbs"/>
                         <outlet property="txtUpwd" destination="tEd-67-Ovm" id="0LP-tJ-Ss7"/>
-                        <segue destination="s8X-wW-L57" kind="modal" identifier="Login" id="aGV-yc-zw2"/>
+                        <segue destination="s8X-wW-L57" kind="showDetail" identifier="Login" id="aGV-yc-zw2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -182,14 +182,124 @@
                     <connections>
                         <outlet property="myCollectionView" destination="x33-ij-tf4" id="2CJ-bz-I6a"/>
                         <outlet property="slideshow" destination="4Fa-F2-nY6" id="adc-lU-Ble"/>
-                        <segue destination="azF-5r-ENl" kind="push" identifier="schedule" id="iF2-FW-WP7"/>
+                        <segue destination="azF-5r-ENl" kind="show" identifier="schedule" id="iF2-FW-WP7"/>
                         <segue destination="dnd-hk-Qwc" kind="show" identifier="customerinfo" id="xtw-fd-2Uj"/>
                         <segue destination="6kM-40-h2K" kind="show" identifier="location" id="DqA-xb-FNQ"/>
+                        <segue destination="yu7-ME-77Z" kind="show" identifier="project" id="wEX-vn-QJm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zFR-LV-eJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433" y="395"/>
+            <point key="canvasLocation" x="1456" y="436"/>
+        </scene>
+        <!--共享中心-->
+        <scene sceneID="pEW-2v-hKw">
+            <objects>
+                <viewController id="WPe-Do-d89" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PP6-xg-RbV"/>
+                        <viewControllerLayoutGuide type="bottom" id="He1-oS-gaQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PRS-ye-Sqw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="共享中心" id="zkz-CB-Ibu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iQw-CT-I1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="-361"/>
+        </scene>
+        <!--我的工程-->
+        <scene sceneID="vlw-lZ-SNu">
+            <objects>
+                <viewController id="c92-hw-URv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pgH-Ya-BnY"/>
+                        <viewControllerLayoutGuide type="bottom" id="LPG-YP-BF5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gdQ-8R-Z82">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4a-IE-SR7">
+                                <rect key="frame" x="130" y="269" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="添加工程"/>
+                                <connections>
+                                    <segue destination="Iu4-Qh-HpL" kind="showDetail" id="Wrn-0b-TEf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的工程" id="H4t-zg-ZMs"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="Iu4-Qh-HpL" kind="showDetail" identifier="addProject" id="XgG-5R-yH9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="coX-ig-uxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="-1015"/>
+        </scene>
+        <!--Add Project View Controller-->
+        <scene sceneID="eyl-v4-1S2">
+            <objects>
+                <viewController id="cRy-pK-mIH" customClass="AddProjectViewController" customModule="LessoBusiness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gXb-f9-gd2"/>
+                        <viewControllerLayoutGuide type="bottom" id="F8M-QN-l5g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vne-86-5EY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EWb-B9-DL0">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="EGL-lb-mlS">
+                            <rect key="frame" x="60" y="8" width="200" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <segments>
+                                <segment title="基本信息"/>
+                                <segment title="四方信息"/>
+                                <segment title="供货情况"/>
+                            </segments>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="添加" id="aJY-nK-6UN"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yga-Na-vNl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2539" y="-1015"/>
+        </scene>
+        <!--工程管理-->
+        <scene sceneID="Eph-S0-z0U">
+            <objects>
+                <tabBarController id="yu7-ME-77Z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="工程管理" id="cym-di-WnM"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="mjQ-wd-e4Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="c92-hw-URv" kind="relationship" relationship="viewControllers" id="MdV-NV-3pt"/>
+                        <segue destination="WPe-Do-d89" kind="relationship" relationship="viewControllers" id="qGk-H4-wL0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vdf-hm-1m5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1179" y="-722"/>
         </scene>
         <!--定位签到-->
         <scene sceneID="9b6-Jm-eg7">
@@ -669,11 +779,32 @@
             </objects>
             <point key="canvasLocation" x="434" y="1813"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yhP-H1-h8b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iu4-Qh-HpL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SIG-ba-4dH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cRy-pK-mIH" kind="relationship" relationship="rootViewController" id="gRn-Xw-nQF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7HM-5W-gtb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2151" y="-1015"/>
+        </scene>
     </scenes>
     <resources>
         <image name="logo" width="936" height="191"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="XgG-5R-yH9"/>
         <segue reference="Ama-Ze-EHW"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.96078431372549022" green="0.14901960784313725" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>

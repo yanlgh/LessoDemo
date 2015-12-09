@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DC6C966379324CD94EAE144A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222A29D31A8B08067DD5D21 /* Pods.framework */; };
+		E419EB5A1C16D1330089AE57 /* MyProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E419EB591C16D1330089AE57 /* MyProjectViewController.swift */; };
+		E419EB5C1C16D35D0089AE57 /* AddProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E419EB5B1C16D35D0089AE57 /* AddProjectViewController.swift */; };
 		E45557601BF33C1A0044924F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E455575F1BF33C1A0044924F /* MainViewController.swift */; };
 		E45557641BF3486F0044924F /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45557631BF3486F0044924F /* MainNavigationController.swift */; };
 		E45AD8221C06FDC9003BF771 /* ScheduleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45AD8211C06FDC8003BF771 /* ScheduleDetailViewController.swift */; };
@@ -67,6 +69,8 @@
 		1222A29D31A8B08067DD5D21 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC9A344673F5CC4DBCFC640 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C71C846BFF148A7B4E13BD7E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E419EB591C16D1330089AE57 /* MyProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProjectViewController.swift; sourceTree = "<group>"; };
+		E419EB5B1C16D35D0089AE57 /* AddProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProjectViewController.swift; sourceTree = "<group>"; };
 		E455575F1BF33C1A0044924F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E45557631BF3486F0044924F /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		E45AD8211C06FDC8003BF771 /* ScheduleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +177,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E419EB571C16C5990089AE57 /* Project(工程管理) */ = {
+			isa = PBXGroup;
+			children = (
+				E419EB591C16D1330089AE57 /* MyProjectViewController.swift */,
+				E419EB5B1C16D35D0089AE57 /* AddProjectViewController.swift */,
+			);
+			name = "Project(工程管理)";
+			sourceTree = "<group>";
+		};
 		E455574E1BF2F36A0044924F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +246,7 @@
 		E45557541BF30CEE0044924F /* Module(功能模块) */ = {
 			isa = PBXGroup;
 			children = (
+				E419EB571C16C5990089AE57 /* Project(工程管理) */,
 				E4AC37941C06A2390007154D /* Home(首页) */,
 				E47827B41BFC5F0D00EE07D5 /* Customer(客户资料) */,
 				E48712EE1BF3560200C1D50D /* Profile(我) */,
@@ -658,6 +672,7 @@
 				E45AD8271C083CAF003BF771 /* SignInLocated.swift in Sources */,
 				E4AC37921C069FE40007154D /* NSString+FSExtension.m in Sources */,
 				E4AC37651C05B3DD0007154D /* SwiftNotice.swift in Sources */,
+				E419EB5A1C16D1330089AE57 /* MyProjectViewController.swift in Sources */,
 				E48712F61BF87F9900C1D50D /* Profile.swift in Sources */,
 				E4AC37931C069FE40007154D /* UIView+FSExtension.m in Sources */,
 				E4AC378F1C069FE40007154D /* FSCalendarStickyHeader.m in Sources */,
@@ -672,6 +687,7 @@
 				E4AC37891C069FE40007154D /* FSCalendarAppearance.m in Sources */,
 				E46C0ADC1BEC4ED200AB4C81 /* AddScheduleViewController.swift in Sources */,
 				E46C0ACD1BE9FE7700AB4C81 /* LoginViewController.swift in Sources */,
+				E419EB5C1C16D35D0089AE57 /* AddProjectViewController.swift in Sources */,
 				E47827B61BFC5F9D00EE07D5 /* Customer.swift in Sources */,
 				E4A581331BFD713B002A21C2 /* CustomerInfoViewController.swift in Sources */,
 				E4AC37871C069FE40007154D /* FSCalendar+IBExtension.m in Sources */,

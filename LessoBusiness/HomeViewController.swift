@@ -93,7 +93,7 @@ extension HomeViewController:UICollectionViewDataSource,UICollectionViewDelegate
     
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        if(indexPath.row == 0 || indexPath.row == 3 || indexPath.row == 4 || indexPath.row == 5 || indexPath.row == 7 || indexPath.row == 8){
+        if(indexPath.row == 3 || indexPath.row == 4 || indexPath.row == 5 || indexPath.row == 7 || indexPath.row == 8){
             self.notice("开发中...", type: NoticeType.info, autoClear: true, autoClearTime: 1)
             return
         }
