@@ -258,28 +258,48 @@
                     <view key="view" contentMode="scaleToFill" id="vne-86-5EY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EGL-lb-mlS">
+                                <rect key="frame" x="20" y="72" width="280" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="基本信息"/>
+                                    <segment title="四方信息"/>
+                                    <segment title="供货情况"/>
+                                </segments>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5un-J7-Xtg">
+                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cRy-pK-mIH" id="2cY-nz-J1E"/>
+                                    <outlet property="delegate" destination="cRy-pK-mIH" id="961-3V-oMt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5un-J7-Xtg" secondAttribute="trailing" id="3Y9-cR-IzY"/>
+                            <constraint firstItem="EGL-lb-mlS" firstAttribute="leading" secondItem="vne-86-5EY" secondAttribute="leadingMargin" constant="4" id="Cwk-i8-ddJ"/>
+                            <constraint firstItem="5un-J7-Xtg" firstAttribute="bottom" secondItem="F8M-QN-l5g" secondAttribute="top" id="F8N-aP-hnY"/>
+                            <constraint firstItem="5un-J7-Xtg" firstAttribute="leading" secondItem="vne-86-5EY" secondAttribute="leading" id="YD8-Cn-1wx"/>
+                            <constraint firstItem="EGL-lb-mlS" firstAttribute="top" secondItem="gXb-f9-gd2" secondAttribute="bottom" constant="8" symbolic="YES" id="eYS-yK-NnM"/>
+                            <constraint firstItem="5un-J7-Xtg" firstAttribute="top" secondItem="EGL-lb-mlS" secondAttribute="bottom" constant="8" symbolic="YES" id="g5p-04-oe2"/>
+                            <constraint firstItem="EGL-lb-mlS" firstAttribute="centerX" secondItem="5un-J7-Xtg" secondAttribute="centerX" id="x0I-q5-oSy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EWb-B9-DL0">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="EGL-lb-mlS">
-                            <rect key="frame" x="60" y="8" width="200" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <animations/>
-                            <segments>
-                                <segment title="基本信息"/>
-                                <segment title="四方信息"/>
-                                <segment title="供货情况"/>
-                            </segments>
-                        </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" title="添加" id="aJY-nK-6UN"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yga-Na-vNl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2539" y="-1015"/>
+            <point key="canvasLocation" x="2537" y="-1015"/>
         </scene>
         <!--工程管理-->
         <scene sceneID="Eph-S0-z0U">
