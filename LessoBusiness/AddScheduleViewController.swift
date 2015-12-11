@@ -62,6 +62,8 @@ class AddScheduleViewController: FormViewController {
             <<< DateRow("date") { $0.value = NSDate(); $0.title = "安排日期" }
     }
     
+    
+    
     @IBAction func addClicked(sender: UIBarButtonItem) {
         self.pleaseWait()
         var url = ""

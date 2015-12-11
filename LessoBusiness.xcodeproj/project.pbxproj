@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		189FBC921C192DF700BA731F /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 189FBC911C192DF700BA731F /* mapapi.bundle */; };
+		189FBC941C19600200BA731F /* webconfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189FBC931C19600200BA731F /* webconfig.swift */; };
 		DC6C966379324CD94EAE144A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222A29D31A8B08067DD5D21 /* Pods.framework */; };
 		E419EB5A1C16D1330089AE57 /* MyProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E419EB591C16D1330089AE57 /* MyProjectViewController.swift */; };
 		E419EB5C1C16D35D0089AE57 /* AddProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E419EB5B1C16D35D0089AE57 /* AddProjectViewController.swift */; };
@@ -24,7 +26,6 @@
 		E46C0ADA1BEB4FA300AB4C81 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46C0AD91BEB4FA300AB4C81 /* ScheduleViewController.swift */; };
 		E46C0ADC1BEC4ED200AB4C81 /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46C0ADB1BEC4ED200AB4C81 /* AddScheduleViewController.swift */; };
 		E46C0AE51BED94D200AB4C81 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46C0AE41BED94D200AB4C81 /* Schedule.swift */; };
-		E478279A1BFABA0900EE07D5 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E47827991BFABA0900EE07D5 /* mapapi.bundle */; };
 		E47827A11BFABFE600EE07D5 /* tmp.mm in Sources */ = {isa = PBXBuildFile; fileRef = E47827A01BFABFE600EE07D5 /* tmp.mm */; };
 		E47827AD1BFAF61300EE07D5 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47827AA1BFAF61300EE07D5 /* BaiduMapAPI_Location.framework */; };
 		E47827AE1BFAF61300EE07D5 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47827AB1BFAF61300EE07D5 /* BaiduMapAPI_Map.framework */; };
@@ -67,6 +68,8 @@
 
 /* Begin PBXFileReference section */
 		1222A29D31A8B08067DD5D21 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		189FBC911C192DF700BA731F /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+		189FBC931C19600200BA731F /* webconfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webconfig.swift; sourceTree = "<group>"; };
 		AEC9A344673F5CC4DBCFC640 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C71C846BFF148A7B4E13BD7E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E419EB591C16D1330089AE57 /* MyProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProjectViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +90,6 @@
 		E46C0AD91BEB4FA300AB4C81 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		E46C0ADB1BEC4ED200AB4C81 /* AddScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddScheduleViewController.swift; sourceTree = "<group>"; };
 		E46C0AE41BED94D200AB4C81 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
-		E47827991BFABA0900EE07D5 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = ../../../Downloads/BaiduMap_IOSSDK_v2/BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
 		E478279B1BFABA5A00EE07D5 /* LessoBusiness-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LessoBusiness-Bridging-Header.h"; sourceTree = "<group>"; };
 		E47827A01BFABFE600EE07D5 /* tmp.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = tmp.mm; sourceTree = "<group>"; };
 		E47827AA1BFAF61300EE07D5 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				E4AC37641C05B3DD0007154D /* SwiftNotice.swift */,
+				189FBC931C19600200BA731F /* webconfig.swift */,
 				E4A581361C001060002A21C2 /* ToPinYin */,
 				E455575D1BF30E8A0044924F /* Security */,
 			);
@@ -365,11 +368,11 @@
 		E47827B01BFAF67300EE07D5 /* Baidu */ = {
 			isa = PBXGroup;
 			children = (
+				189FBC911C192DF700BA731F /* mapapi.bundle */,
 				E45AD8231C0805EC003BF771 /* BaiduMapAPI_Search.framework */,
 				E47827AA1BFAF61300EE07D5 /* BaiduMapAPI_Location.framework */,
 				E47827AB1BFAF61300EE07D5 /* BaiduMapAPI_Map.framework */,
 				E47827AC1BFAF61300EE07D5 /* BaiduMapAPI_Base.framework */,
-				E47827991BFABA0900EE07D5 /* mapapi.bundle */,
 			);
 			name = Baidu;
 			sourceTree = "<group>";
@@ -572,7 +575,6 @@
 				TargetAttributes = {
 					E46C0AB31BE9E94500AB4C81 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = TF33MWRBZ9;
 					};
 				};
 			};
@@ -600,9 +602,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E46C0AC21BE9E94500AB4C81 /* LaunchScreen.storyboard in Resources */,
-				E478279A1BFABA0900EE07D5 /* mapapi.bundle in Resources */,
 				E4AC37901C069FE40007154D /* Info.plist in Resources */,
 				E46C0ABF1BE9E94500AB4C81 /* Assets.xcassets in Resources */,
+				189FBC921C192DF700BA731F /* mapapi.bundle in Resources */,
 				E4A5812D1BFC6D51002A21C2 /* ContactCell.xib in Resources */,
 				E46C0ABD1BE9E94500AB4C81 /* Main.storyboard in Resources */,
 			);
@@ -679,6 +681,7 @@
 				E4AC37911C069FE40007154D /* NSDate+FSExtension.m in Sources */,
 				E45AD8221C06FDC9003BF771 /* ScheduleDetailViewController.swift in Sources */,
 				E4AC378A1C069FE40007154D /* FSCalendarCell.m in Sources */,
+				189FBC941C19600200BA731F /* webconfig.swift in Sources */,
 				E4AC378B1C069FE40007154D /* FSCalendarCollectionView.m in Sources */,
 				E4AC378D1C069FE40007154D /* FSCalendarFlowLayout.m in Sources */,
 				E4A5813C1C02E5EE002A21C2 /* AddCustomerViewController.swift in Sources */,
@@ -812,6 +815,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LessoBusiness",
@@ -824,6 +829,7 @@
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = LESSO.Business;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "LessoBusiness/LessoBusiness-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -836,6 +842,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LessoBusiness",
@@ -847,6 +855,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = LESSO.Business;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "LessoBusiness/LessoBusiness-Bridging-Header.h";
 			};
 			name = Release;

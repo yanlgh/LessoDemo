@@ -114,6 +114,7 @@ class CustomerInfoViewController: UIViewController,UITableViewDataSource,UITable
                 customer.name = user!["Name"] as! String
                 customer.tel = user!["Tel"] as! String
                 cell.updateContactsinUI(customer, indexPath: indexPath, subtitleType: SubtitleCellValue.Phonenumer)
+        
             //}
      
         //}

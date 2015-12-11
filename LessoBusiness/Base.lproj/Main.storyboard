@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -186,6 +186,7 @@
                         <segue destination="dnd-hk-Qwc" kind="show" identifier="customerinfo" id="xtw-fd-2Uj"/>
                         <segue destination="6kM-40-h2K" kind="show" identifier="location" id="DqA-xb-FNQ"/>
                         <segue destination="yu7-ME-77Z" kind="show" identifier="project" id="wEX-vn-QJm"/>
+                        <segue destination="pzx-cl-dhX" kind="show" id="4tZ-Od-6wF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zFR-LV-eJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -418,7 +419,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDY-pr-Yjj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1935" y="395"/>
+            <point key="canvasLocation" x="2097" y="588"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yjt-Cs-f5Y">
+            <objects>
+                <viewController id="pzx-cl-dhX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D3x-A9-PUx"/>
+                        <viewControllerLayoutGuide type="bottom" id="icR-RB-jQC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cj7-XW-hK8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iN7-fG-jFt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7G4-ja-faD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2255" y="79"/>
         </scene>
         <!--客户档案-->
         <scene sceneID="sF4-GF-tmv">
@@ -454,12 +475,12 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="tableView" destination="b3z-Yv-fCy" id="UdR-xh-kKc"/>
-                        <segue destination="NEA-Zj-q8c" kind="show" identifier="addCustomer" id="bN3-jF-bfo"/>
+                        <segue destination="9ii-rr-Ahj" kind="showDetail" identifier="addCustomer" id="WGS-6X-bUK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z0A-N6-aVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433" y="1193"/>
+            <point key="canvasLocation" x="1381" y="1209"/>
         </scene>
         <!--Add Customer View Controller-->
         <scene sceneID="fQJ-dL-eNS">
@@ -475,11 +496,12 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6zR-b4-k4m"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ax6-hZ-fao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1841" y="1193"/>
+            <point key="canvasLocation" x="2471" y="1225"/>
         </scene>
         <!--添加日程-->
         <scene sceneID="U2C-dh-D5C">
@@ -588,7 +610,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xa7-dT-5qH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1791" y="1882"/>
+            <point key="canvasLocation" x="1674" y="1908"/>
         </scene>
         <!--日程管理-->
         <scene sceneID="TWx-mn-mlS">
@@ -799,13 +821,32 @@
             </objects>
             <point key="canvasLocation" x="2151" y="-1015"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GXg-ut-j0y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ii-rr-Ahj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yfi-9Z-Sh7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NEA-Zj-q8c" kind="relationship" relationship="rootViewController" id="GUA-M8-6gB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kf0-nV-Stj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1939" y="1225"/>
+        </scene>
     </scenes>
     <resources>
         <image name="logo" width="936" height="191"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XgG-5R-yH9"/>
-        <segue reference="Ama-Ze-EHW"/>
+        <segue reference="Hjg-Kr-jX0"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.96078431372549022" green="0.14901960784313725" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
 </document>

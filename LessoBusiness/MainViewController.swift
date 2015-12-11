@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ReactiveCocoa
+
 
 class MainViewController: UITabBarController {
     override func viewDidLoad() {

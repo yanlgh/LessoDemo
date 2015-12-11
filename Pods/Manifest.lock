@@ -26,30 +26,17 @@ PODS:
     - AFNetworking (~> 2.3)
     - ImageSlideshow/Core
   - ImageSlideshow/Core (0.2.3)
-  - ReactiveCocoa (4.0.4-alpha-1):
-    - ReactiveCocoa/UI (= 4.0.4-alpha-1)
-    - Result (~> 0.6-beta.1)
-  - ReactiveCocoa/Core (4.0.4-alpha-1):
-    - ReactiveCocoa/no-arc
-    - Result (~> 0.6-beta.1)
-  - ReactiveCocoa/no-arc (4.0.4-alpha-1):
-    - Result (~> 0.6-beta.1)
-  - ReactiveCocoa/UI (4.0.4-alpha-1):
-    - ReactiveCocoa/Core
-    - Result (~> 0.6-beta.1)
   - Realm (0.96.2):
     - Realm/Headers (= 0.96.2)
   - Realm/Headers (0.96.2)
   - RealmSwift (0.96.2):
     - Realm (= 0.96.2)
-  - Result (0.6.0-beta.6)
   - SwiftyJSON (2.3.1)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - Eureka (~> 1.2)
   - ImageSlideshow/AFURL
-  - ReactiveCocoa (~> 4.0.4-alpha-1)
   - RealmSwift
   - SwiftyJSON (~> 2.3.1)
 
@@ -58,10 +45,8 @@ SPEC CHECKSUMS:
   Alamofire: 9b0a7188b961a03914a99304488bd226b0e46c0e
   Eureka: aa7059d2a30e1b206a581f0aabfcf903ece6beae
   ImageSlideshow: 2895e62777c2ea36f56d948723b3586a12a89756
-  ReactiveCocoa: 618a2fc13d4ed80e380aa6fa56547cef43c7341d
   Realm: 3ce8448151c571e90b85002d984d7f93f54fc8a3
   RealmSwift: 485599fe54e35461c4a0daa7d01d8fbf11424873
-  Result: dc390d0b58f9ec43fcd536f1ebdd130803cc6cbc
   SwiftyJSON: 592b53bee5ef3dd9b3bebc6b9cb7ee35426ae8c3
 
 COCOAPODS: 0.39.0
