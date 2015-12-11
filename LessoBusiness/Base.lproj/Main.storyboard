@@ -535,7 +535,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8c-gx-uVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="1901"/>
+            <point key="canvasLocation" x="915" y="1888"/>
         </scene>
         <!--Schedule Detail View Controller-->
         <scene sceneID="WQ9-uh-oDI">
@@ -797,7 +797,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IfQ-IG-adi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="434" y="1813"/>
+            <point key="canvasLocation" x="470" y="1888"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yhP-H1-h8b">
@@ -824,8 +824,8 @@
         <image name="logo" width="936" height="191"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XgG-5R-yH9"/>
         <segue reference="Ama-Ze-EHW"/>
+        <segue reference="XgG-5R-yH9"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.96078431372549022" green="0.14901960784313725" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
 </document>
